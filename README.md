@@ -53,3 +53,74 @@ THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
 ```
+
+### Deployment Steps [LOCAL]
+
+- Download project
+- Install npm packages with ```text npm i```
+- Add a .env file to the root of project with details of database
+
+```text
+DB_NAME='tech_blog'
+DB_USER='root'
+DB_PW='XXX'
+```
+
+- Seed default user tables
+```text
+node seeds/index.js
+```
+
+- Run npm start
+- Visit port 3001 at http://localhost:3001
+
+```text
+USER 1
+username: jon_snow
+password: 1234567
+
+USER 2
+username: martin_bull
+password: 1234567
+```
+- Surf
+
+### Deployment Steps [ONLINE]
+
+## https://www.clever-cloud.com/
+
+- Database mysql creation
+- Select DEV Free package
+- Get database connection details
+
+## https://render.com/
+
+- Link to github repo
+- Create webservice
+- Input DB credentials from CLOUD CLEVER
+
+```text
+DB_HOST='XXXX'
+DB_NAME='XXXX'
+DB_USER='XXXX'
+DB_PW='XXXX'
+```
+
+- Deploy application
+
+
+### Screenshot
+
+Home page
+![](images/screenshot1.png)
+
+Login
+![](images/screenshot2.png)
+
+Incorrect Password
+![](images/screenshot3.png)
+
+Dashboard
+![](images/screenshot4.png)
+
+------------------------
