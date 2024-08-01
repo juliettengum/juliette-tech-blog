@@ -64,6 +64,7 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 DB_NAME='tech_blog'
 DB_USER='root'
 DB_PW='XXX'
+DB_HOST='localhost'
 ```
 
 - Seed default user tables
