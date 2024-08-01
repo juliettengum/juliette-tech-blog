@@ -1,0 +1,44 @@
+<!-- displaying articles -->
+{{> post-info post}}
+
+<!-- displaying form and comments-->
+<!-- only display if logged in -->
+{{#if loggedIn}}
+
+<section>
+  <div class="card mb-6">
+    <header class="card-header card-header-title post-info">
+
+      <div class="column">
+        <p class=" has-text-primary-light"></p>
+        <p class="default-text  is-capitalized is-pulled-left">Add Comment</p>
+      </div>
+
+    </header>
+
+    <div class="card-content">
+      <div class="content has-text-justified">
+        <form class="comment-form">
+          <div>
+            <label for="post-content">Content</label>
+            <textarea class="textarea is-large" id="post-content" name="comment-body"
+              placeholder="insert comment here"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="text-white button gray-button input">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

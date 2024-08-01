@@ -1,0 +1,40 @@
+<article>
+    <div class="card mb-6">
+    <header class="card-header card-header-title post-info">
+
+      <div class="column">
+        <p class=" has-text-primary-light"></p>
+        <p class="default-text  is-capitalized is-pulled-left">Edit Post</p>
+      </div>
+
+    </header>
+
+    <div class="card-content">
+      <div class="content has-text-justified">
+        <form class="edit-post-form">
+          <div>
+            <label for="post-title">Title</label>
+            <input class="input" type="text" id="post-title" name="post-title" value="{{post.title}}" />
+          </div>
+          <div>
+            <label for="post-content">Content</label>
+            <textarea class="textarea input" type="text" id="post-content" name="post-content">{{post.post_content}}</textarea>
+          </div>
+           <div class="is-pulled-right">
+            created by you on {{format_date post.created_at}}
+          </div>
+          <div>
+            <button type="submit" class="text-white button gray-button input">Update Post</button>
+            <button type="button" class="text-white button gray-button input delete-post-btn">Delete</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</article>
+
+{{> comments post.comments}}
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
