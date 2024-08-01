@@ -6,7 +6,7 @@
 
 ### Deployment
 
-https://tech-blog-uy12.onrender.com/
+[Deployment URL of Juliette Tech Blog](https://tech-blog-uy12.onrender.com/)
   
 ### User Actions
 
