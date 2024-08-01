@@ -1,0 +1,29 @@
+<div class="comments">
+  {{#each this}}
+  <section class="comment">
+  <div class="card mb-6">
+    <header class="card-header card-header-title post-info">
+
+      <div class="column">
+        <p class=" has-text-primary-light"></p>
+        <p class="default-text  is-capitalized is-pulled-left"></p>
+      </div>
+
+    </header>
+
+    <div class="card-content">
+      <div class="content has-text-justified">
+        <div class="text">
+          {{comment_text}}
+        </div>
+        <div class="meta">
+          -- {{user.username}} on {{format_date created_at}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  {{/each}}
+</div>
+
