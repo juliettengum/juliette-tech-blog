@@ -1,7 +1,7 @@
 {
   "name": "tech-blog",
   "version": "1.0.0",
-  "description": "Tech blog",
+  "description": "Juliette Tech blog",
   "main": "server.js",
   "dependencies": {
     "abab": "^2.0.6",
@@ -487,6 +487,6 @@
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
   },
-  "author": "",
+  "author": "Juliette Ngum",
   "license": "ISC"
 }
